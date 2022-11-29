@@ -1,4 +1,4 @@
-package model.Quene;
+package model.quene;
 
 import model.node.Node;
 

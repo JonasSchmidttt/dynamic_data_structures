@@ -1,6 +1,4 @@
-import model.Quene.Queue;
-import model.node.Node;
-import model.stack.Stack;
+import model.quene.Queue;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,6 +17,7 @@ public class Main {
         System.out.println(stack.loop());
         */
 
+        /*
         //Queue
         Queue schlange = new Queue();
         schlange.enqueue(2);
@@ -27,6 +26,13 @@ public class Main {
         schlange.enqueue("jürgen");
         //schlange.dequeue();
         System.out.println(schlange.loop());
+         */
 
+        //Queue Test
+        Queue Tschlange = new Queue();
+        Tschlange.enqueue(2);
+        Tschlange.dequeue();
+        Tschlange.enqueue(3);
+        System.out.println(Tschlange.loop());
     }
 }
