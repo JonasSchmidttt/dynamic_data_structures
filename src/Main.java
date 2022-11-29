@@ -1,3 +1,6 @@
+import model.quene.N_Queue;
+import model.stack.Stack;
+import model.list.List;
 import model.quene.Queue;
 
 public class Main {
@@ -15,8 +18,8 @@ public class Main {
 
 
         System.out.println(stack.loop());
+        System.out.println(stack.lenght());
         */
-
         /*
         //Queue
         Queue schlange = new Queue();
@@ -28,11 +31,18 @@ public class Main {
         System.out.println(schlange.loop());
          */
 
-        //Queue Test
-        Queue Tschlange = new Queue();
-        Tschlange.enqueue(2);
-        Tschlange.dequeue();
-        Tschlange.enqueue(3);
-        System.out.println(Tschlange.loop());
+        //Liste
+        /*
+        List list = new List();
+        list.append(1);
+
+        list.getObject();
+        */
+
+        //N_Queue
+        N_Queue n_queue = new N_Queue();
+        n_queue.enquene(1);
+        n_queue.enquene("hallo");
+        System.out.println(n_queue.front());
     }
 }

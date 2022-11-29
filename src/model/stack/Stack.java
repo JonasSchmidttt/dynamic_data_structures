@@ -2,7 +2,6 @@ package model.stack;
 
 import model.node.Node;
 
-import java.awt.*;
 
 public class Stack<T> {
     private Node<T> first;
@@ -56,7 +55,7 @@ public class Stack<T> {
             return null;
         }
 
-        return (T) first.getContains();
+        return first.getContains();
     }
 
     public String loop() {
@@ -67,6 +66,22 @@ public class Stack<T> {
         }
 
         ret += tmp.getContains();
+        return ret;
+    }
+
+    public int lenght() {
+        int count = 0;
+        Node<T> tmp = first;
+        while (tmp.getNext() != null) {
+            count++;
+        }
+        System.out.println(count);
+        return count;
+    }
+
+    public String[] toArray() {
+        String[] ret = new String[lenght()];
+
         return ret;
     }
 }
