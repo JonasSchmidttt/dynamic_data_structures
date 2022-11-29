@@ -51,21 +51,22 @@ public class Stack<T> {
     unverändert. Falls der Stack leer ist, wird null zurückgegeben
     */
     public T top() {
-        /*
+
         if (isEmpty()) {
             return null;
         }
-        */
+
         return (T) first.getContains();
     }
 
-    public T loop() {
+    public String loop() {
+        String ret = "";
         Node<T> tmp = first;
         for (; tmp.getNext() != null; tmp = tmp.getNext()) {
-            System.out.println(tmp.getContains());
+            ret += tmp.getContains();
         }
 
-        System.out.println(tmp.getContains());
-        return null;
+        ret += tmp.getContains();
+        return ret;
     }
 }
